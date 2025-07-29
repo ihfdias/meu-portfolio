@@ -5,55 +5,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <nav class="navegacao">
         <ul class="menu">
             <li>
-                <a href="#inicio">Início</a>
+                <a href="#inicio" class="menu-link">Início</a>
             </li>
             <li>
-                <a href="#sobre">Sobre</a>
+                <a href="#sobre" class="menu-link">Sobre</a>
             </li>
             <li>
-                <a href="#projetos">Projetos</a>
+                <a href="#projetos" class="menu-link">Projetos</a>
             </li>
             <li>
-                <a href="#contatos">Contato</a>
+                <a href="#contatos" class="menu-link">Contato</a>
             </li>
         </ul>
     </nav>
 
-    <main id="inicio" class="cabecalho">
-        <div>
+    <main id="inicio" class="cabecalho">        
             <img src="img/igor.JPG" alt="Foto de Igor Dias" class="foto-perfil">
             <h1>Igor Dias</h1>
-            <p>Desenvolvedor Full Stack</p>
-        </div>
+            <p class="cabecalho-subtitulo">Desenvolvedor Full Stack</p>        
     </main>
 
     <section id="sobre" class="sobre">
         <h2 class="sobre-titulo">Sobre Mim</h2>
         <div class="sobre-caixa">
-            <p class="sobre-paragrafo">Atualmente, atuo como Assistente de Comunicação no Hospital PUC-Campinas, contribuindo para a gestão de
+            <p class="sobre-paragrafo">Atualmente, atuo como Assistente de Comunicação no Hospital PUC-Campinas,
+                contribuindo para a gestão de
                 comunicação interna, mídias sociais e edição de conteúdos. Com mais de cinco anos de experiência em
                 comunicação e relações públicas, foco em conectar pessoas e fortalecer a imagem institucional por meio
                 de estratégias eficazes e colaborativas.
                 <br><br>
                 Estou migrando para a área de tecnologia, investindo no aprendizado de HTML, CSS, JavaScript e PHP.
                 Busco integrar habilidades de comunicação e tecnologia para desenvolver soluções inovadoras que gerem
-                impacto significativo e promovam avanços institucionais.</p>
+                impacto significativo e promovam avanços institucionais.
+            </p>
         </div>
     </section>
 
     <section id="projetos" class="projetos">
         <h2 class="projetos-titulo">Meus Projetos</h2>
         <div class="projetos-caixa">
+
             <div class="projetos-card">
-                
+                <img src="img/projeto-comunicados.jpg" alt="Projeto 1" class="projeto-imagem">
+                <h3 class="info-projetos">Sistemas de Comunicados</h3>
+                <p class="paragrafo-projetos">Sistemas de Comunicados criado para envio ao Corpo Clínico de um hospital,
+                    contendo a página inicial para o médico, e o painel administrativo para quem for cuidar da
+                    plataforma.</p>
             </div>
+
+            <div class="projetos-card">
+                <img src="img/projeto-comunicados.jpg" alt="Projeto 1" class="projeto-imagem">
+                <h3 class="info-projetos">Sistemas de Comunicados</h3>
+                <p class="paragrafo-projetos">Sistemas de Comunicados criado para envio ao Corpo Clínico de um hospital,
+                    contendo a página inicial para o médico, e o painel administrativo para quem for cuidar da
+                    plataforma.</p>
+            </div>
+
+            <div class="projetos-card">
+                <img src="img/projeto-comunicados.jpg" alt="Projeto 1" class="projeto-imagem">
+                <h3 class="info-projetos">Sistemas de Comunicados</h3>
+                <p class="paragrafo-projetos">Sistemas de Comunicados criado para envio ao Corpo Clínico de um hospital,
+                    contendo a página inicial para o médico, e o painel administrativo para quem for cuidar da
+                    plataforma.</p>
+            </div>
+
         </div>
+    </section>
+
+    <section id="contatos" class="contatos">
+        <h2 class="conteudo-titulo">Contatos</h2>
+        <form action="" class="formulario-contato" id="formulario">
+            <div class="nome-form">
+                <input type="text" class="campo-form" placeholder="Nome">
+            </div>
+            <div class="grupo-form">
+                <textarea class="text-form" placeholder="Digite sua Mensagem"></textarea>
+            </div>
+        </form>
     </section>
 
 </body>
